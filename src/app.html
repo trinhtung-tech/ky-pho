@@ -1,10 +1,11 @@
 <title>Kỳ Phổ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Kỳ Phổ">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<script>/* Chặn phóng to bằng chụm ngón (Safari bỏ qua user-scalable) */["gesturestart","gesturechange"].forEach(function(t){document.addEventListener(t,function(e){e.preventDefault();},{passive:false});});</script>
 <style>
 /* Bố cục: ứng dụng một màn hình — bàn cờ gỗ ở trên, lời bình và các nhánh biến ở giữa, thanh điều khiển cố định ở đáy. Màn rộng: bàn cờ bên trái, sổ nước đi bên phải. */
 :root {
@@ -34,7 +35,8 @@
   --paper: #171614; --ink: #ece7de; --ink-soft: #a59d90; --line: #36322c; --card: #201e1b;
   --cinnabar: #e0665c; --jade: #6fb59f; color-scheme: dark;
 }
-html, body { height: 100%; }
+html, body { height: 100%; touch-action: manipulation; -webkit-text-size-adjust: 100%; }
+* { touch-action: manipulation; }
 body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 15px; -webkit-tap-highlight-color: transparent; }
 button { font: inherit; color: inherit; }
 button:focus-visible, a:focus-visible { outline: 2px solid var(--cinnabar); outline-offset: 2px; }
