@@ -1,0 +1,21 @@
+@@ Chương 6: Ngũ bát pháo đối lên Tượng trái
+@sach Bình Phong Mã hiện đại
+@phan Phần 2: Pháo đầu tiến Tốt 3 đối Bình phong Mã
+@trang 68–71
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B3.1 B3.1 5. P8.4 T7.5 {Hình trang 68.}
+[Cục 43: Ngũ bát pháo và Mã ra biên đối lên Tượng trái và tiến Tốt biên]
+6. M8.9 B1.1 7. P8-7 X1.3 8. X9-8 X1-3 9. X8.7 P8-9 10. X2.9 M7/8 11. X8/6 {Hình trang 69.}
+[Cách 1] 11... X3-4 12. X8-2 M8.6 13. X2.7 M6.4 14. M3.4 S4.5 15. M4.3 P9.4 16. X2/5 P9.2 17. S6.5 X4.1 18. M3.4 X4-6 19. M4/5 M3.4 20. X2-3 {Trắng chiếm ưu thế.}
+  ( [Cách 2] 11... M8.6 12. M3.2 {Hình trang 69.} 12... B5.1 13. P5.3 X3-5 14. B5.1 S4.5 15. T7.5 P9.4 16. S6.5 B9.1 {Thế trận hai bên ngang nhau.} )
+  ( [Cách 3] 11... B3.1 12. X8-2 M8.6 13. X2.7 M6.4 14. M3.2 {Hình trang 70.}
+    [Biến 1] 14... S4.5 15. M2.3 P9.4 16. X2/5 P9/2 17. B5.1 B3-4 18. M3/1 B9.1 19. P5-7 {Trắng chiếm ưu.}
+      ( [Biến 2] 14... B5.1 15. P5-1 B7.1 16. B3.1 T5.7 17. B7.1 T3.5 18. T3.5 S4.5 19. P1.4 X3-2 20. P1-3 {Trắng phát động tấn công, chiếm ưu thế.} )
+      ( [Biến 3] 14... B3.1 15. P5-1 S4.5 16. M2.3 P9/2 17. X2.1 P9.1 18. P1.4 X3.1 {Thế trận hai bên tương đương.} )
+  )
+  ( [Cục 44: Ngũ bát pháo và lên Mã 2 đối lên Tượng và ra 2 Xe]
+    6. P8-7 X1-2 7. M8.7 {Hình trang 70.}
+    [Cách 1] 7... P2-1 8. X9-8 X2.9 9. M7/8 P8-9 10. X2.9 M7/8 11. M8.7 M8.6 12. B5.1 S4.5 13. M3.5 P9.4 14. B7.1 M3/1 15. B7.1 T5.3 16. B5.1 B5.1 17. P7-1 M6.8 18. P5.3 P1-5 {Thế trận hai bên còn giằng co.}
+      ( [Cách 2] 7... P2.2 8. X9-8 B7.1 9. B3.1 P2-7 10. X8.9 M3/2 11. X2.3 {Hình trang 71.} 11... M2.3 12. B5.1 P8-9 13. X2.6 M7/8 14. M3.2 M8.6 15. M7.5 P9.4 16. B7.1 B3.1 17. M5.7 P7-3 18. M2.4 M6.8 {Trắng chiếm thế thượng phong, nhưng Đen vẫn còn kháng cự được.} )
+      ( [Cách 3] 7... P2.4 {Hình trang 71.} 8. X9.1 X2.3 9. P7-3 X2.2 10. X2.4 B3.1 11. B3.1 X2/1 12. B7.1 X2-7 13. M3.4 P2-3 14. T7.9 P8-9 15. X9-2 X8.5 16. X2.3 P9.4 {Sau khi đổi Xe, Pháo đánh vào Tốt biên, thế Đen không kém.} )
+  )

@@ -1,0 +1,40 @@
+@@ Chương 3: Ngũ thất pháo tiến Tam binh đối đẩy Tốt biên và lên Tượng trái
+@sach Bình Phong Mã hiện đại
+@phan Phần 2: Pháo đầu tiến Tốt 3 đối Bình phong Mã
+@trang 54–60
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B3.1 B3.1 5. M8.9 B1.1 6. P8-7 M3.2 7. X9.1 T7.5 8. M3.4 B1.1 9. B9.1 X1.5 10. X9-4 {Hình trang 55.}
+[Cục 34: Lên Tượng trái (1)]
+10... M2/3 {Hình trang 55.}
+  ( [Cục 35: Lên Tượng trái (2)]
+    10... S6.5 11. M4.6 B5.1 12. B7.1 M2.1 {Hình trang 56.}
+    [Cách 1] 13. P7.1 M1/3 14. B5.1 P8.4 15. S4.5 P2.2 16. B5.1 M3/5 {Hình trang 56.}
+      [Biến 1] 17. M6.5 T3.5 18. P5.5 S5.4 19. P7-5 P8.1 20. S5/4 X1.1 21. X4.7 P2/2 22. X2.1 P2-5 23. P5.4 X1-6 24. X4/5 M5.6 {Đen nhiều quân, chiếm ưu thế.}
+        ( [Biến 2] 17. X4.4 M5/4 18. P7-5 P2-4 19. X4-6 X1.1 20. Pt.5 S4.5 21. X6.2 X8-6 22. X6/1 X6.5 {Thế trận hai bên cơ bản cân bằng.} )
+      ( [Cách 2] 13. P7/1 M1/3 14. M9.7 {Hình trang 57.}
+        [Biến 1] 14... X1/2 15. B5.1 P8.2 16. B5.1 B7.1 17. P5.5 S5/6 18. P5/1 P8-5 19. M6.5 M7.5 20. X2.9 P5/2 21. P7-5 S4.5 22. P5.6 T3.5 23. X4.5 {Trắng chiếm ưu thế.}
+          ( [Biến 2] 14... X1.1 15. X2.6 M3.5 16. X2-3 M5/4 17. M7.6 X1-4 18. P7.8 T5/3 19. X3.1 X4/2 20. X3-8 P8-5 {Tình trạng này dễ dẫn tới hòa cờ.} )
+      )
+  )
+  ( [Cục 36: Lên Tượng trái (3)]
+    10... S6.5 11. M4.6 P8.1 12. B3.1 B7.1 13. M6.4 P2/1 14. B5.1 {Hình trang 57.}
+    [Cách 1] 14... X1-4 15. X2.3 M2.1 16. P7/1 M7/9 17. X4.1 X4.3 18. S4.5 X8-6 19. P5.1 X4/2 20. P7.4 {Trắng đi Pháo như thế nhưng Đen không dám ăn, Đen quả là khó ứng phó.}
+      ( [Cách 2] 14... B7.1 {Hình trang 58.}
+        [Biến 1] 15. M4/3 P8.3 16. X4.2 X1-5 17. M3.4 X5-8 {Trắng công nhưng Đen vẫn trụ được.}
+          ( [Biến 2] 15. X4-6 P8.2 16. S6.5 X8-6 17. M4/3 P8/4 18. X6.5 X1-5 19. M3/4 X5.1 {Đen phản tiên.} )
+          ( [Biến 3] 15. X4-3 P8-7 16. X2.9 M7/8 17. X3.3 M8.9 18. S4.5 M2/3 19. B5.1 X1-7 20. M4/3 B5.1 21. B7.1 P7-5 22. B7.1 P5.4 23. T3.5 M3.5 24. B7-6 B5.1 {Hai bên đều có cơ hội.} )
+          ( [Biến 4] 15. S4.5 P8.2 16. T3.1 B3.1 17. X2.3 M2.4 18. X2-6 M7.8 {Hình trang 58.} 19. P5-2 P8-5 20. M4/5 M8.6 21. P7.2 B5.1 22. P2-7 B5.1 23. T1.3 P2-3 {Cờ thế hai bên còn giằng co.} )
+          ( [Biến 5] 15. X2.3 P8.2 16. X2-6 {Hình trang 59.} 16... P8-5 17. S6.5 M7.8 18. X4-2 M8/9 19. X2.8 M9/8 20. M4/5 X1-5 21. X6.5 M2.1 22. X6-8 M1.3 23. X8/6 M3.5 24. S4.5 M8.7 {Trắng được một quân, nhưng Đen có Tốt quá hà, hai bên còn giằng co.} )
+      )
+  )
+  ( [Cục 37: Lên Tượng trái (4)]
+    10... S6.5 11. M4.6 P8.1 12. P7/1 X1-4 13. M6.4 {Hình trang 59.}
+    [Cách 1] 13... P2/1 14. B3.1 B7.1 15. X2.3 B7.1 16. B5.1 P8.2 17. P5-3 M7.8 18. M4/3 P8-5 {Hình trang 60.} 19. P3-2 X8-7 20. P2.3 X7.5 21. P2-8 X4.2 22. X2.6 T5/7 23. B7.1 T3.5 24. P8/1 {Trắng nhiều quân có phần ưu thế hơn.}
+      ( [Cách 2] 13... P8-6 14. X2.9 M7/8 15. X4.5 {Hình trang 60.}
+        [Biến 1] 15... X4-7 16. P5.4 X7.4 17. P5/1 M2/1 18. T7.5 X7/3 19. B5.1 {Trắng chiếm ưu thế.}
+          ( [Biến 2] 15... M8.7 16. X4-3 M2.1 17. S4.5 B3.1 18. P5-2 M1.3 19. S5.6 B3.1 20. M9.7 {Quân bên Trắng linh hoạt, chiếm ưu thế.} )
+          ( [Biến 3] 15... M2/3 16. X4-3 P2.1 17. X3.2 P2/2 18. X3/2 M8.6 19. X3.3 S5/6 20. X3/2 X4-6 21. B7.1 M3.4 22. B7.1 M4.5 {Hai bên cờ thế cân bằng, giằng co còn lâu.} )
+      )
+  )
+[Cách 1] 11. X2.4 P8.2 12. M4.3 M3.4 13. B5.1 X1-5 14. X4.4 P2.1 15. X4-2 P2-7 16. Xt.4 P7.6 17. S4.5 M7/8 18. X2.5 {Trắng nhiều quân, chiếm ưu thế.}
+  ( [Cách 2] 11. B7.1 X1-3 12. P5-3 P8.3 13. B3.1 M3.4 {Hình trang 55.} 14. M4.6 X3.2 15. M6/4 X3.2 16. B3-2 P8-7 17. X4.1 {Trắng kém Tượng nhưng có Tốt qua sông, vẫn chiếm ưu.} )

@@ -1,0 +1,20 @@
+@@ Chương 2: Ngũ thất pháo tiến Tam binh đối đẩy Tốt biên và lên Tượng
+@sach Bình Phong Mã hiện đại
+@phan Phần 2: Pháo đầu tiến Tốt 3 đối Bình phong Mã
+@trang 51–54
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B3.1 B3.1 5. M8.9 B1.1 6. P8-7 M3.2 7. X9.1 T3.5 8. X2.6 X1.3 9. X9-6 {Hình trang 52.}
+9... P8-9
+[Cục 32: Đẩy Tốt biên và lên Tượng (1)]
+10. X2-3 P9/1 11. B3.1 P9-7 12. X3-4 P7.3 13. M3.4 S6.5 {Hình trang 52.}
+  ( [Cục 33: Đẩy Tốt biên và lên Tượng (2)]
+    10. X2.3 M7/8 11. M3.4 {Hình trang 53.}
+    [Cách 1] 11... S4.5 12. P5.4 M2/3 13. P5/1 X1-6 14. X6.3 X6.1 15. P7-5 B7.1 16. M4/6 P2.4 17. M9/7 P2-4 18. X6/1 B7.1 19. M7.8 X6/1 20. M8.9 {Trắng chiếm ưu thế.}
+      ( [Cách 2] 11... S6.5 12. M4.3 P9-7 13. T3.1 M8.9 {Hình trang 53.} 14. M3/4 M2.1 15. P7/1 B5.1 16. X6.3 P7-8 17. B3.1 T5.7 18. P5.3 T7.5 19. T1/3 P8-6 20. T3.5 {Trắng tạm thời tuy chưa tấn công được, nhưng vẫn điều chỉnh được thế trận, bảo toàn được ưu thế.} )
+      ( [Cách 3] 11... M8.7 12. M4.3 S4.5 13. M3.1 T7.9 {Hình trang 54.}
+        [Biến 1] 14. X6.4 M2.1 15. P7/1 B1.1 16. B5.1 P2.2 17. X6.3 M7.6 18. X6-8 P2.1 19. P7-5 X1-4 {Các quân của Đen hiệp đồng tác chiến tốt, khống chế được cục diện.}
+          ( [Biến 2] 14. B5.1 M2.1 15. P7/1 M7.6 16. X6.2 {Hình trang 54.} 16... X1-4 17. X6-4 M6/7 18. P7-3 X4.2 19. P5-3 X4-5 20. T3.5 M7.8 21. B3.1 T9.7 22. X4-2 M8/9 23. B7.1 P2-1 24. B7.1 {Trắng chiếm ưu.} )
+      )
+  )
+[Cách 1] 14. B5.1 P7.1 15. M4.5 X8.6 16. X6-3 M7.8 17. X4-3 M8.7 18. Xt/2 M7.5 19. T7.5 X1-5 {Cục diện cân bằng, bình ổn.}
+  ( [Cách 2] 14. X4.2 P7-6 15. B5.1 X8.5 16. M4/3 X8-5 17. P5/1 P2/1 18. X6.7 X1-4 {Hình trang 52.} 19. P7.3 P2-3 20. X6/2 P3-6 {Đen chiếm ưu thế.} )

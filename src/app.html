@@ -1,0 +1,399 @@
+<title>Kỳ Phổ</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kỳ Phổ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<style>
+/* Bố cục: ứng dụng một màn hình — bàn cờ gỗ ở trên, lời bình và các nhánh biến ở giữa, thanh điều khiển cố định ở đáy. Màn rộng: bàn cờ bên trái, sổ nước đi bên phải. */
+:root {
+  --paper: #f3f1ec;      /* nền giấy dó */
+  --ink: #1f1d1a;        /* mực */
+  --ink-soft: #5e5850;
+  --line: #d9d3c7;
+  --card: #fbfaf7;
+  --cinnabar: #b3261e;   /* son đỏ — quân Trắng/Đỏ, điểm nhấn */
+  --jade: #2f6b5a;       /* ngọc — nhánh biến */
+  --wood: #e2bf83;
+  --wood-dark: #c99b55;
+  --grid: #5a3a17;
+  --piece-face: #f6e7c8;
+  --piece-black: #222;
+  --font-ui: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-han: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #171614; --ink: #ece7de; --ink-soft: #a59d90; --line: #36322c; --card: #201e1b;
+    --cinnabar: #e0665c; --jade: #6fb59f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #171614; --ink: #ece7de; --ink-soft: #a59d90; --line: #36322c; --card: #201e1b;
+  --cinnabar: #e0665c; --jade: #6fb59f; color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 15px; -webkit-tap-highlight-color: transparent; }
+button { font: inherit; color: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--cinnabar); outline-offset: 2px; }
+
+#app { height: 100%; display: flex; flex-direction: column; }
+header.top { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 1px solid var(--line); min-height: 52px; }
+header.top h1 { font-size: 16px; font-weight: 600; margin: 0; flex: 1; min-width: 0; text-wrap: balance; line-height: 1.3; }
+header.top .sub { display: block; font-size: 12px; font-weight: 400; color: var(--ink-soft); }
+.iconbtn { border: 1px solid var(--line); background: var(--card); border-radius: 10px; min-width: 40px; height: 40px; padding: 0 10px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; }
+.iconbtn svg { width: 18px; height: 18px; }
+
+/* Thư viện */
+#library { flex: 1; overflow-y: auto; padding: 16px; }
+.lib-inner { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand .seal { width: 44px; height: 44px; border-radius: 8px; background: var(--cinnabar); color: #fff; display: grid; place-items: center; font-family: var(--font-han); font-size: 24px; font-weight: 900; }
+.brand h2 { margin: 0; font-size: 22px; }
+.brand p { margin: 2px 0 0; color: var(--ink-soft); font-size: 13px; }
+.book h3 { margin: 0 0 4px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+.book .part { font-size: 14px; color: var(--ink-soft); margin: 0 0 8px; }
+.game-item { width: 100%; text-align: left; border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 14px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; }
+.game-item b { font-size: 16px; font-weight: 600; }
+.game-item span { font-size: 13px; color: var(--ink-soft); }
+.game-item .err { color: var(--cinnabar); }
+
+/* Trình xem */
+#viewer { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.view-body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; padding: 10px 16px 0; overflow: hidden; }
+.board-wrap { flex: none; max-width: min(100%, 520px, calc((100dvh - 330px) * 0.83)); margin: 0 auto; width: 100%; touch-action: pan-y; }
+.board-wrap svg { display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 6px 18px rgba(60,35,10,.18); }
+.panel { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; min-width: 0; max-width: 520px; width: 100%; margin: 0 auto; padding-bottom: 12px; }
+.crumbs { font-size: 12px; color: var(--jade); font-weight: 600; letter-spacing: .02em; display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.crumbs span + span::before { content: "›"; color: var(--ink-soft); margin-right: 6px; font-weight: 400; }
+.now { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.now .mv { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.now .who { font-size: 13px; color: var(--ink-soft); }
+.comment { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; line-height: 1.55; font-size: 15px; }
+.comment:empty { display: none; }
+.branches { display: flex; flex-direction: column; gap: 8px; }
+.branches .hd { font-size: 13px; color: var(--ink-soft); }
+.branch-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1.5px solid var(--jade); color: var(--jade); background: transparent; border-radius: 999px; padding: 7px 12px; cursor: pointer; font-size: 14px; font-weight: 500; }
+.chip.on { background: var(--jade); color: var(--paper); }
+.moves { display: flex; flex-wrap: wrap; gap: 4px 2px; font-variant-numeric: tabular-nums; font-size: 15px; line-height: 1.2; }
+.moves .pair { display: inline-flex; align-items: center; gap: 0; margin-right: 6px; }
+.moves .no { color: var(--ink-soft); padding-right: 2px; font-size: 13px; }
+.mbtn { border: 0; background: transparent; text-align: left; padding: 5px 6px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 3px; white-space: nowrap; }
+.mbtn.cur { background: var(--ink); color: var(--paper); }
+.mbtn .fork { width: 6px; height: 6px; border-radius: 50%; background: var(--jade); flex: none; }
+.mbtn .han { font-family: var(--font-han); font-weight: 900; }
+.mbtn .red, .now .red { color: var(--cinnabar); }
+.mbtn.cur .red { color: inherit; }
+.sect-title { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; margin: 4px 0 0; }
+
+nav.ctrl { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); background: var(--paper); }
+nav.ctrl button { height: 48px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); cursor: pointer; display: grid; place-items: center; }
+nav.ctrl button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+nav.ctrl button:disabled { opacity: .35; cursor: default; }
+nav.ctrl svg { width: 22px; height: 22px; }
+
+@media (min-width: 900px) {
+  .view-body { display: grid; grid-template-columns: minmax(0, 560px) minmax(0, 420px); justify-content: center; align-items: start; gap: 28px; padding: 20px; }
+  .board-wrap { max-width: min(560px, calc((100dvh - 220px) * 0.87)); }
+  .panel { max-height: 100%; }
+  nav.ctrl { max-width: 560px; margin: 0 auto; width: 100%; border: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pc { transition: transform .18s ease; }
+}
+</style>
+
+<div id="app">
+  <section id="libraryView">
+    <header class="top"><h1>Thư viện thế cờ</h1></header>
+  </section>
+</div>
+
+<script id="xq-data" type="text/plain">__DATA__</script>
+<script>__ENGINE__</script>
+<script>
+(function () {
+  'use strict';
+  const H = (tag, attrs = {}, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === 'class') el.className = v;
+      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) el.setAttribute(k, v);
+    }
+    for (const kd of kids.flat()) if (kd != null) el.append(kd.nodeType ? kd : document.createTextNode(kd));
+    return el;
+  };
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  };
+  const ICON = {
+    first: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5v14M18 6l-8 6 8 6z"/></svg>',
+    prev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+    next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+    last: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5v14M6 6l8 6-8 6z"/></svg>',
+    play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>',
+    back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+    flip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v16M7 4l-3 3M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3"/></svg>',
+  };
+
+  const games = XQ.parseLibrary(document.getElementById('xq-data').textContent);
+  games.forEach((g, gi) => {
+    g.id = 'g' + gi;
+    let n = 0;
+    (function walk(nd) { nd.id = n++; nd.sel = 0; nd.children.forEach(walk); })(g.root);
+  });
+
+  const app = document.getElementById('app');
+  let state = { game: null, node: null, flip: store.get('xq-flip', false), timer: null };
+
+  // ---------- Thư viện ----------
+  function showLibrary() {
+    stopPlay();
+    state.game = null;
+    store.set('xq-last', null);
+    const books = {};
+    for (const g of games) {
+      const b = g.meta.sach || 'Thế cờ khác';
+      (books[b] = books[b] || []).push(g);
+    }
+    app.replaceChildren(
+      H('section', { id: 'library' },
+        H('div', { class: 'lib-inner' },
+          H('div', { class: 'brand' },
+            H('div', { class: 'seal', 'aria-hidden': 'true' }, '譜'),
+            H('div', {}, H('h2', {}, 'Kỳ Phổ'), H('p', {}, 'Xem từng nước của các thế cờ trong sách'))),
+          Object.entries(books).map(([b, list]) => {
+            const parts = {};
+            for (const g of list) (parts[g.meta.phan || ''] = parts[g.meta.phan || ''] || []).push(g);
+            return H('div', { class: 'book' },
+              H('h3', {}, b),
+              Object.entries(parts).map(([ph, items]) => H('div', { style: 'display:flex;flex-direction:column;gap:8px;margin-bottom:14px' },
+                ph ? H('p', { class: 'part' }, ph) : null,
+                items.map((g) => {
+                  let moves = 0, lines = 0;
+                  (function w(nd) { if (nd.parent) moves++; if (!nd.children.length) lines++; nd.children.forEach(w); })(g.root);
+                  return H('button', { class: 'game-item', onclick: () => openGame(g) },
+                    H('b', {}, g.title),
+                    H('span', {}, `${lines} nhánh biến · ${moves} nước` + (g.meta.trang ? ` · sách trang ${g.meta.trang}` : '')),
+                    g.errors.length ? H('span', { class: 'err' }, 'Có lỗi: ' + g.errors[0]) : null);
+                }))));
+          }))));
+  }
+
+  // ---------- Trình xem ----------
+  function openGame(g, nodeId) {
+    state.game = g;
+    let node = g.root;
+    if (nodeId != null) {
+      (function f(nd) { if (nd.id === nodeId) node = nd; nd.children.forEach(f); })(g.root);
+      // đặt lại lựa chọn nhánh dọc đường đi
+      for (let a = node; a.parent; a = a.parent) a.parent.sel = a.parent.children.indexOf(a);
+    }
+    state.node = node;
+    renderViewer();
+  }
+
+  let els = {};
+  function renderViewer() {
+    const g = state.game;
+    els.title = H('h1', {}, g.title, H('span', { class: 'sub' }, [g.meta.sach, g.meta.trang && 'tr. ' + g.meta.trang].filter(Boolean).join(' · ')));
+    const backBtn = H('button', { class: 'iconbtn', 'aria-label': 'Về thư viện', onclick: showLibrary });
+    backBtn.innerHTML = ICON.back;
+    const flipBtn = H('button', { class: 'iconbtn', 'aria-label': 'Lật bàn cờ', onclick: () => { state.flip = !state.flip; store.set('xq-flip', state.flip); update(); } });
+    flipBtn.innerHTML = ICON.flip;
+    els.board = H('div', { class: 'board-wrap' });
+    els.crumbs = H('div', { class: 'crumbs' });
+    els.now = H('div', { class: 'now' });
+    els.comment = H('div', { class: 'comment' });
+    els.branches = H('div', { class: 'branches' });
+    els.moves = H('div', { class: 'moves' });
+    const mk = (name, label, fn, cls) => { const b = H('button', { 'aria-label': label, onclick: fn, class: cls || '' }); b.innerHTML = ICON[name]; return b; };
+    els.bFirst = mk('first', 'Về đầu', () => go(state.game.root));
+    els.bPrev = mk('prev', 'Lùi một nước', prev);
+    els.bNext = mk('next', 'Tiến một nước', next, 'primary');
+    els.bLast = mk('last', 'Đến cuối nhánh', last);
+    els.bPlay = mk('play', 'Tự động chạy', togglePlay);
+    app.replaceChildren(
+      H('header', { class: 'top' }, backBtn, els.title, flipBtn),
+      H('section', { id: 'viewer' },
+        H('div', { class: 'view-body' },
+          els.board,
+          els.panel = H('div', { class: 'panel' }, els.crumbs, els.now, els.comment, els.branches,
+            H('p', { class: 'sect-title' }, 'Các nước của nhánh đang xem · chấm xanh là chỗ rẽ nhánh'), els.moves))),
+      H('nav', { class: 'ctrl' }, els.bFirst, els.bPrev, els.bNext, els.bLast, els.bPlay));
+    // vuốt trên bàn cờ
+    let sx = null, sy = null;
+    els.board.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+    els.board.addEventListener('touchend', (e) => {
+      if (sx == null) return;
+      const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { stopPlay(); dx < 0 ? next() : prev(); }
+      sx = null;
+    });
+    update();
+  }
+
+  function go(nd) {
+    state.node = nd;
+    for (let a = nd; a.parent; a = a.parent) a.parent.sel = a.parent.children.indexOf(a);
+    update();
+  }
+  function prev() { stopPlay(); if (state.node.parent) go(state.node.parent); }
+  function next() { const n = state.node; if (n.children.length) { go(n.children[n.sel] || n.children[0]); return true; } stopPlay(); return false; }
+  function last() { stopPlay(); let n = state.node; while (n.children.length) n = n.children[n.sel] || n.children[0]; go(n); }
+  function togglePlay() {
+    if (state.timer) { stopPlay(); return; }
+    if (!state.node.children.length) go(state.game.root);
+    state.timer = setInterval(() => { if (!next()) stopPlay(); }, 1400);
+    els.bPlay.innerHTML = ICON.pause; els.bPlay.setAttribute('aria-label', 'Dừng');
+  }
+  function stopPlay() {
+    if (state.timer) { clearInterval(state.timer); state.timer = null; }
+    if (els.bPlay) { els.bPlay.innerHTML = ICON.play; els.bPlay.setAttribute('aria-label', 'Tự động chạy'); }
+  }
+
+  const moveNo = (nd) => Math.floor((nd.ply - 1) / 2) + 1;
+  function moveLabel(nd, withNo) {
+    const side = nd.side, t = nd.piece.toLowerCase();
+    const han = XQ.HAN_OF[side][t];
+    const rest = nd.text.replace(/^(Tg|X|M|T|S|P|B)/, '');
+    const frag = document.createDocumentFragment();
+    if (withNo) frag.append(moveNo(nd) + (side === 'w' ? '. ' : '... '));
+    frag.append(H('span', { class: 'han' + (side === 'w' ? ' red' : '') }, han), rest);
+    return frag;
+  }
+
+  function update() {
+    const g = state.game, nd = state.node;
+    store.set('xq-last', { g: g.id, n: nd.id });
+    els.board.innerHTML = boardSVG(nd);
+    // nhãn nhánh dọc đường
+    const labels = [];
+    // đi từ dưới lên; mỗi loại nhãn (Cục / Cách / Biến…) chỉ giữ nhãn sâu nhất
+    const seen = new Set();
+    for (let a = nd; a; a = a.parent) {
+      if (!a.label) continue;
+      const kind = a.label.split(/[\s:]/)[0];
+      if (seen.has(kind)) continue;
+      seen.add(kind); labels.unshift(a.label);
+    }
+    els.crumbs.replaceChildren(...labels.map((l) => H('span', {}, l)));
+    if (nd.parent) {
+      els.now.replaceChildren(H('span', { class: 'mv' }, moveLabel(nd, true)),
+        H('span', { class: 'who' }, (nd.side === 'w' ? 'Trắng' : 'Đen') + ' · ' + XQ.toViet(nd.text)));
+    } else {
+      els.now.replaceChildren(H('span', { class: 'mv' }, 'Thế xuất phát'), H('span', { class: 'who' }, 'Bấm ▶ hoặc vuốt sang trái để đi nước đầu'));
+    }
+    els.comment.textContent = nd.comment || '';
+    // nhánh tiếp theo
+    if (nd.children.length > 1) {
+      els.branches.replaceChildren(
+        H('div', { class: 'hd' }, `Từ đây sách đưa ra ${nd.children.length} cách đi tiếp. Chọn một nhánh:`),
+        H('div', { class: 'branch-row' }, nd.children.map((ch, i) => {
+          const b = H('button', { class: 'chip' + (i === nd.sel ? ' on' : ''), onclick: () => { nd.sel = i; state.keepScroll = true; update(); } });
+          let lab = ch.label;
+          if (!lab) for (let a = nd; a && !lab; a = a.parent) lab = a.label;
+          b.append(lab ? lab + ' · ' : '', moveLabel(ch, false));
+          return b;
+        })));
+    } else els.branches.replaceChildren();
+    // sổ nước đi của nhánh đang chọn
+    const path = [];
+    let a = g.root;
+    while (a.children.length) { a = a.children[a.sel] || a.children[0]; path.push(a); }
+    const cells = [];
+    let pair = null;
+    for (const m of path) {
+      if (m.side === 'w' || !pair) {
+        pair = H('span', { class: 'pair' }, H('span', { class: 'no' }, moveNo(m) + (m.side === 'w' ? '.' : '...')));
+        cells.push(pair);
+      }
+      const b = H('button', { class: 'mbtn' + (m === nd ? ' cur' : ''), onclick: () => { stopPlay(); state.keepScroll = true; go(m); } });
+      b.append(moveLabel(m, false));
+      if (m.children.length > 1) b.append(H('span', { class: 'fork', title: 'Có nhánh rẽ sau nước này' }));
+      pair.append(b);
+    }
+    els.moves.replaceChildren(...cells);
+    if (!state.keepScroll) els.panel.scrollTop = 0;
+    state.keepScroll = false;
+    els.bFirst.disabled = els.bPrev.disabled = !nd.parent;
+    els.bNext.disabled = els.bLast.disabled = !nd.children.length;
+  }
+
+  // ---------- Vẽ bàn cờ ----------
+  const S = 40, M = 30, MY = 38, W = S * 8 + M * 2, HH = S * 9 + MY * 2;
+  function xy(i) {
+    let [r, c] = XQ.RC(i);
+    if (state.flip) { r = 9 - r; c = 8 - c; }
+    return [M + c * S, MY + r * S];
+  }
+  function boardSVG(nd) {
+    const pos = nd.pos;
+    let s = `<svg viewBox="0 0 ${W} ${HH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bàn cờ">`;
+    s += `<defs><radialGradient id="pf" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#fbf2dc"/><stop offset="1" stop-color="#e9d2a4"/></radialGradient>
+      <linearGradient id="wd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7c88f"/><stop offset="1" stop-color="#d7ad6a"/></linearGradient></defs>`;
+    s += `<rect width="${W}" height="${HH}" fill="url(#wd)"/>`;
+    s += `<rect x="${M - 6}" y="${MY - 6}" width="${S * 8 + 12}" height="${S * 9 + 12}" fill="none" stroke="#5a3a17" stroke-width="2.2"/>`;
+    const L = (x1, y1, x2, y2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#5a3a17" stroke-width="1.2"/>`;
+    for (let r = 0; r < 10; r++) s += L(M, MY + r * S, M + 8 * S, MY + r * S);
+    for (let c = 0; c < 9; c++) {
+      if (c === 0 || c === 8) s += L(M + c * S, MY, M + c * S, MY + 9 * S);
+      else { s += L(M + c * S, MY, M + c * S, MY + 4 * S); s += L(M + c * S, MY + 5 * S, M + c * S, MY + 9 * S); }
+    }
+    s += L(M + 3 * S, MY, M + 5 * S, MY + 2 * S) + L(M + 5 * S, MY, M + 3 * S, MY + 2 * S);
+    s += L(M + 3 * S, MY + 7 * S, M + 5 * S, MY + 9 * S) + L(M + 5 * S, MY + 7 * S, M + 3 * S, MY + 9 * S);
+    const ry = MY + 4.5 * S + 7;
+    s += `<text x="${M + 2 * S}" y="${ry}" text-anchor="middle" font-family="Noto Serif TC, serif" font-weight="700" font-size="19" fill="#5a3a17" opacity=".75">楚 河</text>`;
+    s += `<text x="${M + 6 * S}" y="${ry}" text-anchor="middle" font-family="Noto Serif TC, serif" font-weight="700" font-size="19" fill="#5a3a17" opacity=".75">漢 界</text>`;
+    // số cột: Đen ở trên (1→9 trái sang phải), Trắng ở dưới (9→1)
+    for (let c = 0; c < 9; c++) {
+      const top = state.flip ? 9 - c : c + 1, bot = state.flip ? c + 1 : 9 - c;
+      s += `<text x="${M + c * S}" y="${MY - 22}" text-anchor="middle" font-size="10" fill="#5a3a17" font-family="system-ui">${state.flip ? bot : top}</text>`;
+      s += `<text x="${M + c * S}" y="${MY + 9 * S + 31}" text-anchor="middle" font-size="10" fill="#5a3a17" font-family="system-ui">${state.flip ? top : bot}</text>`;
+    }
+    // đánh dấu nước vừa đi
+    if (nd.parent) {
+      const [fx, fy] = xy(nd.from), [tx, ty] = xy(nd.to);
+      s += `<circle cx="${fx}" cy="${fy}" r="7" fill="none" stroke="#2f6b5a" stroke-width="2.4" stroke-dasharray="3 2.4"/>`;
+      const dx = tx - fx, dy = ty - fy, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len;
+      const x1 = fx + ux * 9, y1 = fy + uy * 9, x2 = tx - ux * 20, y2 = ty - uy * 20;
+      if (len > 30) s += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2f6b5a" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+        <path d="M${x2 + ux * 6} ${y2 + uy * 6} L${x2 - uy * 6} ${y2 + ux * 6} L${x2 + uy * 6} ${y2 - ux * 6}Z" fill="#2f6b5a" opacity=".7"/>`;
+    }
+    for (let i = 0; i < 90; i++) {
+      const p = pos.board[i];
+      if (!p) continue;
+      const side = XQ.sideOf(p), t = p.toLowerCase();
+      const [x, y] = xy(i);
+      const col = side === 'w' ? '#b3261e' : '#1d1b18';
+      const isTo = nd.parent && nd.to === i;
+      s += `<g class="pc">`;
+      if (isTo) s += `<circle cx="${x}" cy="${y}" r="20.5" fill="none" stroke="#2f6b5a" stroke-width="3"/>`;
+      s += `<circle cx="${x}" cy="${y + 1.5}" r="17.5" fill="rgba(60,30,5,.35)"/>`;
+      s += `<circle cx="${x}" cy="${y}" r="17.5" fill="url(#pf)" stroke="${col}" stroke-width="1.6"/>`;
+      s += `<circle cx="${x}" cy="${y}" r="14.2" fill="none" stroke="${col}" stroke-width=".9"/>`;
+      s += `<text x="${x}" y="${y + 6.6}" text-anchor="middle" font-family="Noto Serif TC, Songti TC, serif" font-weight="900" font-size="19" fill="${col}">${XQ.HAN_OF[side][t]}</text>`;
+      s += `</g>`;
+    }
+    return s + '</svg>';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!state.game) return;
+    if (e.key === 'ArrowRight') { stopPlay(); next(); }
+    else if (e.key === 'ArrowLeft') prev();
+    else if (e.key === 'Home') go(state.game.root);
+    else if (e.key === 'End') last();
+  });
+
+  const lastSeen = store.get('xq-last', null);
+  const g0 = lastSeen && games.find((g) => g.id === lastSeen.g);
+  if (g0) openGame(g0, lastSeen.n);
+  else if (games.length === 1) openGame(games[0]);
+  else showLibrary();
+})();
+</script>

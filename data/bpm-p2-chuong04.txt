@@ -1,0 +1,29 @@
+@@ Chương 4: Tiến Tốt 3 và ra Mã biên đối lên Sĩ
+@sach Bình Phong Mã hiện đại
+@phan Phần 2: Pháo đầu tiến Tốt 3 đối Bình phong Mã
+@trang 60–66
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B3.1 B3.1 5. M8.9 S4.5 {Hình trang 61.}
+[Cục 38: Ngũ thất pháo tiến nhanh Mã lộ 3 đối lên Sĩ Tượng phải]
+6. P8-7 M3.2 7. X9.1 T3.5 8. X9-6 P8.4 9. M3.4 {Hình trang 61.}
+[Cách 1] 9... P8-3 10. X2.9 P3.3 11. S6.5 M7/8 12. X6.5 P2-3 13. X6-8 Ps.5 14. X8/1 Pt-1 15. M9/7 P1/1 16. X8/3 P3/2 17. P5.4 {Trắng khống chế được cục diện.}
+  ( [Cách 2] 9... B1.1 10. S6.5 M2.1 11. P7-8 B3.1 12. B3.1 B7.1 13. X2.3 X8.6 14. M4/2 B7.1 15. P8.1 {Hình trang 62.} 15... B3-4 16. X6.3 B7.1 17. M2/1 M1/2 18. X6-3 P2.4 19. X3.3 B7-6 20. X3/3 B1.1 21. M1.3 {Trắng chiếm ưu thế.} )
+  ( [Cách 3] 9... M2.1 {Hình trang 62.} 10. P7-8 P2.4 11. B3.1 P2-5 12. S6.5 P8-6 13. X2.9 M7/8 14. M4.6 X1-4 15. B3-4 B7.1 16. P8.7 X4-2 17. M6/5 X2-4 18. X6.8 Tg5-4 19. P5.4 M8.7 20. P5-3 B7.1 {Mỗi bên có một ưu thế, cục chiến còn kéo dài.} )
+  ( [Cách 4] 9... X1-2 10. X6.5 P2-4 11. P7.3 {Hình trang 62.}
+    [Biến 1] 11... X2-3 12. P5-7 P8-3 13. X2.9 P3.3 14. S6.5 X3.4 15. X2/7 M2.1 16. P7/1 X3-2 17. P7-9 M1/3 18. X6/1 X2.4 19. P9.5 {Trắng chiếm ưu thế.}
+      ( [Biến 2] 11... P8/3 12. M4.3 P8.4 13. B3.1 T5.7 14. P5.4 M7.5 15. X6-5 P8-5 16. X2.9 P5/4 17. S4.5 T7.5 18. P7/1 M2.4 {Hai bên giằng co còn lâu.} )
+  )
+  ( [Cục 39: Tiến Tốt 3 và trực hoành Xe đối lên Sĩ Tượng phải]
+    6. X9.1 T3.5 7. X9-7 {Hình trang 63.}
+    [Cách 1] 7... B7.1 8. B3.1 T5.7 9. B7.1 B3.1 10. X7.3 M3.4 11. X2.6 T7/5 12. B9.1 X1-4 13. S4.5 M7.6 14. X2/3 X8.1 15. P5-6 M4/2 16. X7/2 X8-7 17. T3.5 M2.1 18. P8.2 B1.1 {Thế trận hai bên tương đương.}
+      ( [Cách 2] 7... P8.2 8. B7.1 B3.1 9. X7.3 M3.4 10. P8-6 X1-3 11. X7.5 T5/3 12. X2.1 T7.5 13. X2-8 P2-3 14. P6.2 P8.2 15. X8.4 P3.2 {Hai bên ở vào thế đối công.} )
+      ( [Cách 3] 7... X1-4 8. B7.1 B3.1 9. X7.3 M3.4 10. X2.6 P2-4 {Trắng tuy muốn công nhưng cũng chưa làm gì được Đen.} )
+      ( [Cách 4] 7... P8.4 8. M3.4 X1-4 9. B3.1 X4.5 10. M4/2 B7.1 11. X2.1 B7.1 12. M2/4 X8.8 13. X7-2 B7-6 14. P5-7 P2-1 15. B9.1 B6.1 16. M4/6 P1.3 17. B7.1 X4-3 18. P7.1 M3.4 19. P7-4 X3.4 {Về cơ bản thế trận cân bằng.} )
+      ( [Cách 5] 7... M3.4 8. P8.4 B7.1 {Hình trang 64.} 9. B3.1 T5.7 10. P8/1 X1-4 11. X7-6 M4/3 12. X6.8 S5/4 13. P8-3 T7.5 14. P3.1 P8.6 15. B9.1 M3.4 16. P5-6 P2.4 {Tình thế cân bằng.} )
+  )
+  ( [Cục 40: Ngũ bát pháo và Mã ra biên đối lên Sĩ Tượng]
+    6. P8.4 T7.5 {Hình trang 65. Sách còn một Cách 4 (bắt đầu 7. Xe 2.6) nhưng in sai và thiếu nước nên chưa đưa vào app.}
+    [Cách 1] 7. P8-7 X1-2 8. X9-8 P2.4 9. X2.6 P8-9 10. X2-3 X8.2 11. P5-6 P9/2 {Trắng điều chỉnh thế trận, tăng cường phòng thủ, chuẩn bị cho trận đối kháng sắp nổ ra.}
+      ( [Cách 2] 7. X9.1 B1.1 8. P8-3 B1.1 9. X9-8 P2.2 10. B9.1 X1.5 11. X8.3 X1-2 12. M9.8 P8.4 {Sau khi đổi Xe, Đen tiến Pháo phong tỏa Xe trắng, giành được phần nào ưu thế.} )
+      ( [Cách 3] 7. P8-3 X1-2 8. X9.1 {Hình trang 65.} 8... P2.5 9. X2.4 B1.1 10. X9-6 X2.4 11. B5.1 B3.1 12. M3.5 B3.1 13. B5.1 B5.1 14. M5.4 P8-9 15. X2.5 M7/8 16. X6.7 {Trắng tiến Xe uy hiếp, gây khó khăn cho Đen.} )
+  )

@@ -1,0 +1,32 @@
+@@ Chương 1: Ngũ cửu pháo quá hà xa đối Mã bàn hà
+@sach Bình Phong Mã hiện đại
+@phan Phần 1: Pháo đầu tiến Tốt 7 đối Bình phong Mã
+@trang 6–9
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B7.1 B7.1 5. X2.6 M7.6 6. M8.7 T3.5 7. P8-9 X1-2
+{Đây là cách chơi khá phổ biến trong thời gian gần đây, bên Trắng có được nhiều khả năng dàn trận, cả bên trái lẫn bên phải đều có thể phát triển quân, 2 Xe có thể khống chế, khiến cho bên Đen khó phát triển.}
+8. X9-8 {Hình thế trận tổng quát (hình trang 6).}
+8... B7.1
+  ( [Đen đi P2.6] 8... P2.6 9. B5.1 B7.1 10. X2/5 B7.1 11. B5.1 {Trắng đắc tiên.} )
+  ( [Đen đi P2.1] 8... P2.1 9. P9.4 B7.1 10. X2/1 B7.1 11. X2-4 B7.1 12. X4-2 B7-6 13. P5-6 X8.1 14. P9/2 {Trắng ưu.} )
+
+[Cục 1: Bình Xe đuổi Mã đối Mã bàn hà]
+9. X2-4
+  ( [Cục 2: Thoái Xe tróc Mã đối Mã bàn hà]
+    9. X2/1 B7.1 10. M3/5 M6/7 11. X2.1 M7.6 12. X2/1 M6/7 13. X2.1 P8-9 14. X2-3 X8.2 15. M7.6 {Hình trang 8. Đến đây có 3 cách đi tiếp.}
+    [Cách 1] 15... P2/1 16. X3/3 M7.8 17. X3-2 M8/6 18. X2.4 M6/8 19. M6.5 {Sau khi đổi Xe thế cờ của Đen hơi yếu hơn vì cánh phải bị kiềm chế, có phần bị động.}
+      ( [Cách 2] 15... P2.1 16. X3/3 M7.8 17. X3-2 M8/6 18. X2-4 M6.7 19. M6.5 P2-5 20. P5.4 S4.5 21. X8.9 M3/2 22. X4-3 M7/5 23. P9-3 Tg5-4 24. B5.1 M5.3 25. T7.5 {Mã đen nằm ở vị thế yếu, Trắng có ưu thế hơn.} )
+      ( [Cách 3] 15... B7-6 {Hình trang 9.}
+        [Biến 1] 16. M6.4 P2/1 17. M4.6 P2-4 18. X8.9 M3/2 19. P5.4 M7.5 20. X3-5 X8.4 {Hai bên đều có lợi thế của mình.}
+          ( [Biến 2] 16. M6/4 P2.4 17. M4/2 P9/1 18. P5-4 P9-7 19. P4.5 P7.2 20. P4-2 {Quân bên Trắng có phần năng động hơn.} )
+          ( [Biến 3] 16. X8.6 P2/1 17. X8-7 B6-5 18. P5-3 P2-7 19. X3-4 X8.3 20. P3.6 X8-4 21. X4-3 M7/9 22. P3-2 X2.7 23. M5.3 B5-6 24. X3.1 {Trắng chiếm ưu.} )
+      )
+  )
+9... M6.8 10. M3/5 B7.1 11. M7.6 P8-9 {Hình trang 7. Đến đây có 2 cách đi tiếp.}
+[Cách 1: Trắng bình Pháo đuổi Xe]
+12. P5-2
+  ( [Cách 2] 12. X8.6 S4.5 {Hình trang 7.} 13. P9.4 X8.4 14. P9.1 P2/1 15. P5-9 P2-1 16. X8.3 M3/2 17. Pt-1 P1.6 18. T7.9 T7.9 19. X4-5 T9/7 20. X5-7 X8-4 21. M5.7 M2.4 {Sau một cuộc đổi quân liên tiếp thì Trắng hơn 2 Tốt nhưng Đen lại có Tốt qua sông. Tuy nhiên nhìn chung Trắng vẫn có phần ưu thế hơn.} )
+12... M8.6 13. P2-4 S4.5 14. X8.6 M6/7 15. M6.4 X8.5 16. M5.7 X8-6
+17. S6.5
+  ( [Nếu Trắng đi M4.6] 17. M4.6 X6/2 18. M6.7 Tg5-4 19. P4-6 P9/1 20. M7.6 S5.4 21. M6.5 P9-4 22. M5.7 X2.1 {Trắng bỏ Xe, Đen hơn quân thắng chắc.} )
+17... M7/8 18. X4-2 X6/1 19. X2.1 B3.1

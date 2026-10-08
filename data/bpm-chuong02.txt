@@ -1,0 +1,31 @@
+@@ Chương 2: Ngũ cửu pháo quá hà xa đối Bình pháo đổi xe
+@sach Bình Phong Mã hiện đại
+@phan Phần 1: Pháo đầu tiến Tốt 7 đối Bình phong Mã
+@trang 10–15
+
+1. P2-5 M8.7 2. M2.3 X9-8 3. X1-2 M2.3 4. B7.1 B7.1 5. X2.6 P8-9 6. X2-3 P9/1 7. M8.7 S4.5 8. P8-9 X1-2 9. X9-8 P9-7 10. X3-4 M7.8 {Hình trang 10.}
+
+[Cục 3: Ngũ cửu pháo quá hà xa đối Bình pháo đổi xe (1)]
+11. X4.2
+  ( [Cục 4: Ngũ cửu pháo quá hà xa đối Bình pháo đổi xe (2)]
+    11. X8.6 B7.1 12. X4-3 M8/7 13. X3-4 B7.1 14. M3/5 {Hình trang 12.}
+    [Cách 1] 14... X8.4 15. X8-7 M3/4 16. P9.4 P2.1 17. X4.2 M4.5 18. X7/1 P2/2 19. X7-2 P2-6 20. X2.2 M7.6 21. P9-1 {Trắng có ưu thế lớn.}
+      ( [Cách 2] 14... T3.5 15. X8-7 X2-3 16. B7.1 P2/1 17. M7.8 {Hình trang 13.} 17... M7.8 18. X4-3 M8.6 19. X3/2 P7.2 20. X3-4 P7-3 21. B7.1 X8.4 22. P5-7 X8-5 23. M8/6 X5-4 24. P7.5 {Trắng chiếm ưu thế.} )
+      ( [Cách 3] 14... T7.5 {Hình trang 13.}
+        [Biến 1] 15. M7.6 X8.5 16. M5.7 B7-6 17. P5-3 M7.8 18. X4/3 P7.8 19. S4.5 P7-9 20. Tg5-4 P2/1 21. X8.1 X8.4 22. Tg4.1 X8-7
+          ( [Biến 2] 15. P9.4 X8.5 16. X8-7 P2.4 17. X7.1 P2-3 18. P9-7 X8-3 19. T7.9 X3/1 20. P5.4 M7.5 21. X4-5 X2.3 22. X5-3 X2-3 23. X7/1 P3/3 24. M7.6 X3-4 25. M5.7 P3.3 26. X3.2 X4.1 {Thế trận hai bên cân bằng.} )
+          ( [Biến 3] 15. X8-7 P2.4 16. B7.1 P2-3 {Hình trang 14.} 17. B7-8 T5.3 18. X7/1 M3.2 19. P9-8 T3.5 20. P8.7 T5.3 21. X4.2 P7/1 22. X4-3 M7.6 23. X3/3 M6.4 24. B5.1 T3/5 25. X3/2 X8.5 {Hai bên tranh giành còn lâu.} )
+      )
+  )
+  ( [Cục 5: Ngũ cửu pháo quá hà xa đối Bình pháo đổi xe (3)]
+    11. M3/5 B7.1 12. X4/1 B7.1 13. X8.6 {Hình trang 14.}
+    [Cách 1] 13... M8/7 14. X4/1 T3.5 15. X8-7 X2-3 16. B7.1 X8.4 {Hình trang 15.} 17. M7.8 X8-6 18. M8.6 X6.1 19. M6/4 M7.6 20. P5-7 {Trắng chiếm ưu.}
+      ( [Cách 2] 13... T3.5 14. P9.4 M8.9 15. M7.6 {Hình trang 15.} 15... B3.1 16. B7.1 P2/1 17. P9-5 X2-4 18. Pt-6 X8.5 19. B5.1 X8-5 20. M5.7 P7.8 21. S4.5 P7-9 22. P6-3 P2-3 23. M6.7 P3.2 24. X8-7 X4.8 {Đen phản công toàn diện, Trắng thất thế.} )
+      ( [Cách 3] 13... T7.5 14. X8-7 P2.4 15. X7-6 {Hình trang 15.} 15... P2-3 16. T3.1 X2.8 17. X6/3 M3.2 18. P5.4 M8/7 19. X4.1 X2-4 20. M7/8 X4/2 21. M5.6 M7.5 22. X4-5 X8.4 23. P9.4 {Trắng có cục diện tốt hơn.} )
+  )
+11... P2/1 12. X4/3 T3.5 13. X8.7 M8.7 14. X4/2 P7.1 {Hình trang 10. Đến đây có 4 cách đi tiếp.}
+[Cách 1] 15. P9.4
+  ( [Cách 2] 15. M7.6 X2-4 16. M6.7 P2-3 17. B7.1 X8.8 18. S4.5 X8-7 19. T3.1 X4.3 {Hình trang 11.} 20. X4-3 P7.4 21. X8-7 P3.2 22. B7.1 X4.2 23. X7-8 P7-8 24. X8.2 X4/5 25. X8/5 {Sau khi đổi quân Trắng chiến trung lộ còn Đen cũng chưa có gì phải lo.} )
+  ( [Cách 3] 15. P5-6 M7/8 16. M7.6 B7.1 {Hình trang 12.} 17. M6.4 P7-6 18. M4.6 P2-4 19. P6.6 X2.2 20. M6.7 S5.4 21. P6-1 Tg5.1 22. X4.4 X8-9 23. P1-2 X9.1 24. P2/2 X2.5 25. S4.5 B7.1 26. M3/4 X9-6 {Bên Đen ưu hơn một chút.} )
+  ( [Cách 4] 15. S4.5 X8.5 {Hình trang 12.} 16. B5.1 P2-1 17. X8.2 M3/2 18. P9.4 M2.3 19. P9/1 X8.3 {Pháo biên Trắng xuất kích, còn Đen tiến Xe uy hiếp Mã trắng, bên nào cũng có thế của mình.} )
+15... X2-1 16. P9/2 P2-4 17. M7.6 X8.8 18. P5-9 X8-3 {Hình trang 11.} 19. T3.5 B3.1 20. B7.1 M3.4 21. M6/8 X3-4 22. Pt-6 P7-2 23. P9.7 P4.4 24. X4-3 P4.1 25. B5.1 P2-3 26. B7-6 P3.4 {Nước hay bắt chết Xe, Đen thắng chắc.}
