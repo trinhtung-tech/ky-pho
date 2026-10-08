@@ -1,0 +1,57 @@
+# Thế cờ tự soạn. Mọi lời giải đã được máy (Fairy-Stockfish) kiểm chứng là chiếu bí bắt buộc.
+
+@@ Trùng pháo (hai Pháo chồng)
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 2bakab2/9/9/9/2p3p2/P3C4/7C1/9/r7r/3AKA3 w
+@de Bí trong 1 nước
+{Hai Xe Đen đang dọa sát Tướng Trắng, Trắng phải bí ngay. Pháo Trắng đã đứng ở cột giữa, Tướng Đen bị hai Sĩ chặn hai bên.}
+1. P2-5 {Pháo sau chiếu, Pháo trước làm ngòi. Tướng không lên được vì vẫn nằm trên đường Pháo, hai bên đã kín Sĩ: hết cờ. Đây là thế "Trùng pháo".}
+
+@@ Mã hậu pháo
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 1c2k4/9/b3N3b/9/2p6/1nP4C1/9/9/r7r/3K1A3 w
+@de Bí trong 1 nước
+{Mã Trắng đứng sát trước mặt Tướng Đen, khống chế hai ô 4 và 6 ở hàng cuối.}
+1. P2-5 {Pháo về cột giữa, lấy Mã làm ngòi chiếu Tướng. Tướng lên thì vẫn bị Pháo chiếu, sang ngang thì vào ô Mã khống chế: hết cờ. Mã đứng trước, Pháo đứng sau nên gọi là "Mã hậu pháo".}
+
+@@ Bạch diện tướng (lộ mặt tướng)
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 2bak4/4a2N1/1c4b2/9/2p3P2/9/9/1r3R3/r8/4K4 w
+@de Bí trong 1 nước
+{Tướng Trắng và Tướng Đen cùng ở cột giữa, chỉ có Sĩ Đen ngăn cách. Con Sĩ này không được rời chỗ, vì hai Tướng không được nhìn mặt nhau.}
+1. X4.7 {Xe tiến sát cạnh Tướng Đen. Sĩ không ăn được Xe vì sẽ lộ mặt tướng, Tướng ăn Xe thì vào ô Mã khống chế: hết cờ. Tướng nhà góp sức sát, gọi là "Bạch diện tướng".}
+
+@@ Muộn cung (bí trong cung)
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 3ak1b2/4a4/9/4p4/6bR1/C8/2n1P4/7r1/4Ar3/3K5 w
+@de Bí trong 1 nước
+{Tướng Đen bị chính hai Sĩ của mình bịt lối ra.}
+1. P9.5 {Pháo lên hàng cuối, lấy Sĩ làm ngòi chiếu ngang. Ô duy nhất còn trống bên phải vẫn nằm trên đường Pháo, hai Sĩ không chạy được để mở đường: hết cờ. Tướng chết ngạt trong cung nên gọi là "Muộn cung".}
+
+@@ Quải giác mã (Mã góc cung)
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 2bakab2/9/4P4/p8/6N2/2R6/9/1c6r/r3A4/4K4 w
+@de Bí trong 1 nước
+{Tốt Trắng đã vào sát cung, khống chế ô ngay trước mặt Tướng Đen.}
+1. M3.4 {Mã nhảy vào góc cung chiếu Tướng. Hai bên Tướng là Sĩ nhà, ô phía trước bị Tốt khống chế, không quân nào ăn được Mã: hết cờ. Mã đứng ở góc cung gọi là "Quải giác mã".}
+
+@@ Xe đâm tim cung
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 2bakab2/7R1/2N6/9/6P2/9/9/1r2C4/r8/3K5 w
+@de Bí trong 1 nước
+{Pháo Trắng nằm sẵn ở cột giữa, Mã Trắng khống chế điểm giữa cung.}
+1. X2-5 {Xe lao vào giữa cung chiếu Tướng. Sĩ ăn Xe thì thành ngòi cho Pháo chiếu, Tướng ăn Xe thì vào ô Mã khống chế: hết cờ.}
+
+@@ Song xa (hai Xe thay nhau chiếu)
+@sach Thế cờ tự luyện
+@phan Sát cuộc 1: Các đòn sát cơ bản
+@fen 3ak4/4a4/2b3bR1/8R/9/9/9/1r7/r3A4/5K3 w
+@de Bí trong 3 nước
+{Hai Xe Trắng cùng ở cánh phải, Tướng Đen có hai Sĩ che.}
+1. X2.2 {Xe thứ nhất xuống hàng cuối chiếu.} S5/6 {Đen buộc phải lùi Sĩ che.} 2. X1-5 {Xe thứ hai sang cột giữa chiếu, nhân lúc Sĩ vừa rời chỗ.} S4.5 {Sĩ còn lại lên che.} 3. X2-4 {Xe thứ nhất ăn Sĩ ở hàng cuối, chiếu bí: Tướng sang ngang vẫn trên đường Xe, phía trước là Sĩ nhà. Hai Xe thay phiên chiếu, mỗi nước đều ép Đen phải che.}

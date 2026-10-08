@@ -1,0 +1,97 @@
+# Bài tập sát cuộc. Thế cờ do máy lọc ra rồi kiểm chứng: lời giải là duy nhất, nước Đen trong lời giải là cách chống đỡ dai nhất.
+
+@@ Bài 1
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3a1k3/C3a4/9/9/2R6/9/9/8r/4K4/9 w
+@de Bí trong 2 nước
+{Trắng đi trước và chiếu bí.}
+1. X7-4 {Chiếu.} S5.6 {Sĩ che.} 2. X4.2 {Xe ăn Sĩ, chiếu bí.}
+
+@@ Bài 2
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3ak4/4a4/9/9/4R4/1R7/9/9/1n2K4/r8 w
+@de Bí trong 2 nước
+{Trắng đi trước và chiếu bí.}
+1. X5.3 {Xe ăn Sĩ, chiếu.} S4.5 {Sĩ ăn Xe, giải chiếu.} 2. X8.5 {Chiếu bí.}
+
+@@ Bài 3
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 2b2k3/9/5a3/3N5/2bP1R3/9/9/8r/9/5K3 w
+@de Bí trong 2 nước
+{Trắng đi trước và chiếu bí.}
+1. X4.2 {Xe ăn Sĩ, chiếu.} Tg6-5 {Tướng tránh chiếu.} 2. X4.2 {Chiếu bí.}
+
+@@ Bài 4
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen N2a1k3/9/b3Pa3/C8/6b2/9/9/9/4r4/3K1A3 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. P9-4 {Chiếu.} S6/5 {Sĩ che.} 2. B5-4 {Chiếu.} Tg6-5 {Tướng tránh chiếu.} 3. M9/7 {Chiếu bí.}
+
+@@ Bài 5
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 4ka3/4a4/b3b4/1N7/5R3/9/9/9/5K3/3A2r2 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. M8.7 {Chiếu.} Tg5-4 {Tướng tránh chiếu.} 2. X4-6 {Chiếu.} S5.4 {Sĩ che.} 3. X6.2 {Xe ăn Sĩ, chiếu bí.}
+
+@@ Bài 6
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 5a3/3Nk4/5a3/6R2/6b2/3n2C2/9/9/4A2r1/4K4 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. X3.2 {Chiếu.} Tg5.1 {Tướng tránh chiếu.} 2. M6.4 {Mã ăn Sĩ, chiếu.} Tg5-4 {Tướng tránh chiếu.} 3. X3-6 {Chiếu bí.}
+
+@@ Bài 7
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3k1aR2/9/b4a3/9/9/9/1R7/1n2K4/9/1r7 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. X3-4 {Xe ăn Sĩ, chiếu.} Tg4.1 {Tướng tránh chiếu.} 2. X8.5 {Chiếu.} Tg4.1 {Tướng tránh chiếu.} 3. X4/2 {Xe ăn Sĩ, chiếu bí.}
+
+@@ Bài 8
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3k5/4a1R2/1N3a3/9/9/4c4/9/8r/9/4KA3 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. X3.1 {Chiếu.} S5/6 {Sĩ che.} 2. X3-4 {Xe ăn Sĩ, chiếu.} P5/5 {Pháo che.} 3. X4-5 {Xe ăn Pháo, chiếu bí.}
+
+@@ Bài 9
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3k5/9/3aba3/9/9/3N5/R3C4/5r3/3cK4/3A5 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. X9.6 {Chiếu.} T5/3 {Tượng che.} 2. X9-7 {Xe ăn Tượng, chiếu.} Tg4.1 {Tướng tránh chiếu.} 3. M6.5 {Chiếu bí.}
+
+@@ Bài 10
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 3k1a3/9/b2a1RC2/9/N8/9/9/5K3/1r7/3A5 w
+@de Bí trong 3 nước
+{Trắng đi trước và chiếu bí.}
+1. P3.2 {Chiếu.} S6.5 {Sĩ che.} 2. X4.2 {Chiếu.} Tg4.1 {Tướng tránh chiếu.} 3. M9.7 {Chiếu bí.}
+
+@@ Bài 11
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 4ka3/9/9/4P4/2R6/9/6r2/9/1r7/3AK4 w
+@de Bí trong 4 nước
+{Trắng đi trước và chiếu bí.}
+1. X7.4 {Chiếu.} Tg5.1 {Tướng tránh chiếu.} 2. B5.1 {Chiếu.} Tg5-6 {Tướng tránh chiếu.} 3. B5-4 {Thí Tốt, chiếu.} Tg6.1 {Tướng ăn Tốt, Tướng tránh chiếu.} 4. X7-4 {Xe ăn Sĩ, chiếu bí.}
+
+@@ Bài 12
+@sach Thế cờ tự luyện
+@phan Sát cuộc 2: Bài tập chiếu bí
+@fen 5a3/N3k2C1/4b4/6R2/9/9/9/9/5K3/3A4r w
+@de Bí trong 4 nước
+{Trắng đi trước và chiếu bí.}
+1. M9/7 {Chiếu.} Tg5/1 {Tướng tránh chiếu.} 2. P2.1 {Chiếu.} S6.5 {Sĩ che.} 3. X3.3 {Chiếu.} S5/6 {Sĩ che.} 4. X3-4 {Xe ăn Sĩ, chiếu bí.}

@@ -182,7 +182,7 @@ nav.ctrl svg { width: 22px; height: 22px; }
                   (function w(nd) { if (nd.parent) moves++; if (!nd.children.length) lines++; nd.children.forEach(w); })(g.root);
                   return H('button', { class: 'game-item', onclick: () => openGame(g) },
                     H('b', {}, g.title),
-                    H('span', {}, `${lines} nhánh biến · ${moves} nước` + (g.meta.trang ? ` · sách trang ${g.meta.trang}` : '')),
+                    H('span', {}, g.meta.de ? g.meta.de : `${lines} nhánh biến · ${moves} nước` + (g.meta.trang ? ` · sách trang ${g.meta.trang}` : '')),
                     g.errors.length ? H('span', { class: 'err' }, 'Có lỗi: ' + g.errors[0]) : null);
                 }))));
           }))));
@@ -290,7 +290,8 @@ nav.ctrl svg { width: 22px; height: 22px; }
       els.now.replaceChildren(H('span', { class: 'mv' }, moveLabel(nd, true)),
         H('span', { class: 'who' }, (nd.side === 'w' ? 'Trắng' : 'Đen') + ' · ' + XQ.toViet(nd.text)));
     } else {
-      els.now.replaceChildren(H('span', { class: 'mv' }, 'Thế xuất phát'), H('span', { class: 'who' }, 'Bấm ▶ hoặc vuốt sang trái để đi nước đầu'));
+      els.now.replaceChildren(H('span', { class: 'mv' }, state.game.meta.fen ? 'Đề bài' : 'Thế xuất phát'),
+        H('span', { class: 'who' }, state.game.meta.fen ? (state.game.meta.de || '') + ' · Tự nghĩ trước, rồi bấm ▶ để xem lời giải' : 'Bấm ▶ hoặc vuốt sang trái để đi nước đầu'));
     }
     els.comment.textContent = nd.comment || '';
     // nhánh tiếp theo
